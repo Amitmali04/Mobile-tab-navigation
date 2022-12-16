@@ -24,15 +24,19 @@ body {
 }
 
 .phone .content {
-
+    opacity: 0;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     height: calc(100% - 60px);
-    width: 700px;
+    width: 100%;
+    transition: opacity 0.4s ease;
 }
 
+.phone .content.show {
+    opacity: 1;
+}
 
 nav {
     position: absolute;
